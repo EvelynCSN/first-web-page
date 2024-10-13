@@ -1,0 +1,46 @@
+*{
+  margin: 0;
+}
+
+.header{
+  background-image: linear-gradient(#132d46,#091622) ;
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+  a{
+    color: #ffffff; 
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 0.5px;
+    font-size: 25px;
+    transition: color 0.3s ease;
+    user-select: none;
+  };
+  a:hover{
+    color: #01c38e;
+  }
+  .selected-page{
+    color: #01c38e;
+    text-decoration: underline;
+  }
+}
+
+/*---------------------------------------------------- Breakpoints ----------------------------------------------------*/
+@media only screen and (max-width: 600px) {
+  .header{
+    a{
+      font-size: 18px;
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .header{
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    a{
+      font-size: 24px;
+    }
+  }
+}
