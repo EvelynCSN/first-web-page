@@ -99,7 +99,33 @@
     }
   }
 }
-
+/* ---------------------------------------------------Noticias-------------------------------------------------------- */
+.noticias-content{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .three-cards{
+    display: flex;
+    flex-direction: row;
+    img{
+      width: 180px; 
+      height: 180px;
+      object-fit: cover;
+    }
+  }
+  
+  .individual-card{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cards-information{
+    text-align: justify;
+    margin: 5px 60px 40px 60px; 
+  }
+}
 /*---------------------------------------------------- Breakpoints ----------------------------------------------------*/
 @media only screen and (max-width: 600px) {
   .header{
