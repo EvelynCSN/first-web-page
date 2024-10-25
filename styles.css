@@ -126,6 +126,46 @@
     margin: 5px 60px 40px 60px; 
   }
 }
+/* ----------------------------------------------------Acerca de------------------------------------------------------ */
+.acercade-content{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .information-image{
+    display: flex;
+    flex-direction: row;
+    .information{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin: 50px;
+      padding: 50px;
+      width: 300px; /* Ajusta el ancho para que sea más cuadrado */
+      height: 300px; /* Ajusta la altura para que sea más cuadrado */
+      text-align: justify; /* Centra el texto */
+      .buton{
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007BFF; /* Color de fondo */
+       color: white; /* Color del texto */
+        text-decoration: none; /* Sin subrayado */
+        border-radius: 5px; /* Bordes redondeados */
+      }
+    }
+    .image{
+      margin: 40px 40px 110px 40px;
+      img{
+        width: 350px; 
+        height: 350px;
+        object-fit: cover;
+      }
+    }
+  }
+  .end{
+    margin-top: -60px;
+  }
+}
 /*---------------------------------------------------- Breakpoints ----------------------------------------------------*/
 @media only screen and (max-width: 600px) {
   .header{
